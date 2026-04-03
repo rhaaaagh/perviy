@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARENA — Компьютерный клуб</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-mark">A</span>
+        <span class="nav__logo-text">ARENA</span>
+      </a>
+      <div class="nav__links" id="navLinks">
+        <a href="#about" class="nav__link">О клубе</a>
+        <a href="#features" class="nav__link">Возможности</a>
+        <a href="#pricing" class="nav__link">Тарифы</a>
+        <a href="#contact" class="nav__link">Контакты</a>
+      </div>
+      <a href="#pricing" class="nav__cta">Забронировать</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__inner">
+      <a href="#about" class="mobile-menu__link">О клубе</a>
+      <a href="#features" class="mobile-menu__link">Возможности</a>
+      <a href="#pricing" class="mobile-menu__link">Тарифы</a>
+      <a href="#contact" class="mobile-menu__link">Контакты</a>
+      <a href="#pricing" class="mobile-menu__btn">Забронировать</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__video-wrap">
+      <video class="hero__video" id="heroVideo" autoplay muted playsinline>
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__left">
+        <p class="hero__tag">Компьютерный клуб нового поколения</p>
+        <h1 class="hero__title">
+          <span class="hero__title-line" data-reveal>ARENA</span>
+        </h1>
+        <p class="hero__subtitle">Пространство, где точность оборудования встречается с духом соревнования. 120+ станций, турниры каждую неделю, скорость без компромиссов.</p>
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn--primary">Начать играть</a>
+          <a href="#about" class="btn btn--ghost">Узнать больше</a>
+        </div>
+      </div>
+      <div class="hero__right">
+        <div class="hero__stats">
+          <div class="hero__stat" data-reveal>
+            <span class="hero__stat-num">120+</span>
+            <span class="hero__stat-label">Игровых станций</span>
+          </div>
+          <div class="hero__stat" data-reveal>
+            <span class="hero__stat-num">240Hz</span>
+            <span class="hero__stat-label">Мониторы</span>
+          </div>
+          <div class="hero__stat" data-reveal>
+            <span class="hero__stat-num">1Gbps</span>
+            <span class="hero__stat-label">Интернет</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__left" data-reveal>
+          <p class="section__tag">О нас</p>
+          <h2 class="section__title">Не просто клуб.<br>Территория побед.</h2>
+        </div>
+        <div class="about__right" data-reveal>
+          <p class="about__text">ARENA — это больше, чем ряды компьютеров. Мы создали среду, где каждая деталь работает на результат: от акустического зонирования до индивидуальной настройки периферии. Здесь тренируются команды, проходят открытые турниры и рождаются новые имена в киберспорте.</p>
+          <p class="about__text">Каждая станция собрана на базе RTX 4080 / Ryzen 9, с механической клавиатурой и мышью весом по вашему выбору. Воздух охлаждается до 21°C. Кресла — только Herman Miller.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section features" id="features">
+    <div class="container">
+      <p class="section__tag" data-reveal>Возможности</p>
+      <h2 class="section__title section__title--wide" data-reveal>Всё, что нужно для игры на пределе</h2>
+
+      <div class="features__grid">
+        <div class="feature-card feature-card--large" data-reveal>
+          <div class="feature-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Оборудование уровня про</h3>
+          <p class="feature-card__desc">RTX 4080, Ryzen 9 7950X, 32GB DDR5. Мониторы 27" 240Hz IPS. Механическая периферия на выбор — от Logitech до Wooting.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <div class="feature-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">VIP-зоны</h3>
+          <p class="feature-card__desc">Изолированные комнаты на 5 человек с отдельной акустикой и кондиционированием. Для команд и стримеров.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <div class="feature-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">24/7</h3>
+          <p class="feature-card__desc">Работаем без выходных. Ночной тариф со скидкой 40%. Бар с напитками и снеками — прямо на месте.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <div class="feature-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Турниры</h3>
+          <p class="feature-card__desc">Еженедельные открытые турниры по CS2, Valorant, Dota 2. Призовой фонд от 50 000 рублей.</p>
+        </div>
+        <div class="feature-card feature-card--large" data-reveal>
+          <div class="feature-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Скорость без ограничений</h3>
+          <p class="feature-card__desc">Выделенный канал 1 Гбит/с с приоритезацией игрового трафика. Пинг до серверов EU — менее 15мс. Никаких провисаний в прайм-тайм.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <p class="section__tag" data-reveal>Тарифы</p>
+      <h2 class="section__title" data-reveal>Прозрачные цены, никаких скрытых условий</h2>
+
+      <div class="pricing__grid">
+        <div class="pricing-card" data-reveal>
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__name">Стандарт</h3>
+            <p class="pricing-card__desc">Открытая зона, полный доступ к оборудованию</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">150</span>
+            <span class="pricing-card__unit">руб / час</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>RTX 4080 + 240Hz монитор</li>
+            <li>Периферия на выбор</li>
+            <li>Доступ к бару</li>
+            <li>Бесплатный Wi-Fi</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">Выбрать</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured" data-reveal>
+          <div class="pricing-card__badge">Популярный</div>
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__name">VIP</h3>
+            <p class="pricing-card__desc">Изолированная комната с премиум-настройкой</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">280</span>
+            <span class="pricing-card__unit">руб / час</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>Всё из тарифа Стандарт</li>
+            <li>Приватная комната на 5 мест</li>
+            <li>Персональное кондиционирование</li>
+            <li>Приоритетная сеть</li>
+            <li>Напитки включены</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Выбрать</a>
+        </div>
+
+        <div class="pricing-card" data-reveal>
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__name">Ночной</h3>
+            <p class="pricing-card__desc">С 23:00 до 08:00 — максимум игры за минимум</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">700</span>
+            <span class="pricing-card__unit">руб / ночь</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>9 часов непрерывной игры</li>
+            <li>RTX 4080 + 240Hz монитор</li>
+            <li>Горячие напитки включены</li>
+            <li>Тихая зона</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">Выбрать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>CS2</span>
+      <span class="marquee__dot"></span>
+      <span>Valorant</span>
+      <span class="marquee__dot"></span>
+      <span>Dota 2</span>
+      <span class="marquee__dot"></span>
+      <span>Fortnite</span>
+      <span class="marquee__dot"></span>
+      <span>Apex Legends</span>
+      <span class="marquee__dot"></span>
+      <span>League of Legends</span>
+      <span class="marquee__dot"></span>
+      <span>Overwatch 2</span>
+      <span class="marquee__dot"></span>
+      <span>PUBG</span>
+      <span class="marquee__dot"></span>
+      <span>CS2</span>
+      <span class="marquee__dot"></span>
+      <span>Valorant</span>
+      <span class="marquee__dot"></span>
+      <span>Dota 2</span>
+      <span class="marquee__dot"></span>
+      <span>Fortnite</span>
+      <span class="marquee__dot"></span>
+      <span>Apex Legends</span>
+      <span class="marquee__dot"></span>
+      <span>League of Legends</span>
+      <span class="marquee__dot"></span>
+      <span>Overwatch 2</span>
+      <span class="marquee__dot"></span>
+      <span>PUBG</span>
+      <span class="marquee__dot"></span>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__left" data-reveal>
+          <p class="section__tag">Контакты</p>
+          <h2 class="section__title">Приходите,<br>мы уже ждём</h2>
+          <div class="contact__info">
+            <div class="contact__item">
+              <span class="contact__label">Адрес</span>
+              <span class="contact__value">ул. Кибернетическая, 42<br>Москва, 115432</span>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">Телефон</span>
+              <a href="tel:+74951234567" class="contact__value contact__value--link">+7 (495) 123-45-67</a>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">Режим работы</span>
+              <span class="contact__value">Круглосуточно, без выходных</span>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">Email</span>
+              <a href="mailto:play@arena-club.ru" class="contact__value contact__value--link">play@arena-club.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact__right" data-reveal>
+          <form class="contact__form" id="contactForm">
+            <div class="form__group">
+              <label class="form__label" for="name">Имя</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="phone">Телефон</label>
+              <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="message">Сообщение</label>
+              <textarea class="form__input form__textarea" id="message" name="message" placeholder="Расскажите, чем можем помочь" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <a href="#" class="nav__logo">
+            <span class="nav__logo-mark">A</span>
+            <span class="nav__logo-text">ARENA</span>
+          </a>
+          <p class="footer__copy">&copy; 2026 Arena. Все права защищены.</p>
+        </div>
+        <div class="footer__right">
+          <div class="footer__col">
+            <span class="footer__heading">Навигация</span>
+            <a href="#about" class="footer__link">О клубе</a>
+            <a href="#features" class="footer__link">Возможности</a>
+            <a href="#pricing" class="footer__link">Тарифы</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__heading">Соцсети</span>
+            <a href="#" class="footer__link">Telegram</a>
+            <a href="#" class="footer__link">VK</a>
+            <a href="#" class="footer__link">Discord</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
